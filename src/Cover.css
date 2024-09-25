@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.container-img img {
+    width: 50%; /* Ajustado para que la imagen ocupe el 100% del contenedor */
+    height: auto;
+    opacity: 0.5;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.container-img img {
+    animation: fade-in 1s ease-in-out;
+}
+.container-img :hover   {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.3s;
+    
+
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.container-img .container-text {
+    position: absolute;
+    text-align: center; 
+    color: white; 
+}
+
+
+.container-img .container-text p {
+    font-size: 24px;
+    font-weight: bold;
+ 
+}
